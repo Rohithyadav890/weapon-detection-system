@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardAI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .max-width {
+            max-width: 1300px;
+            padding: 0 80px;
+            margin: auto;
+        }
+
+        .home {
+            display: flex;
+            background: url("https://4kwallpapers.com/images/wallpapers/soldier-military-machine-gun-war-silhouette-black-3840x2160-6596.jpg") no-repeat center;
+            height: 100vh;
+            color: #fff;
+            min-height: 500px;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .home .max-width {
+            width: 100%;
+            display: flex;
+        }
+
+        .home .home-content {
+            text-align: center;
+            margin: auto;
+        }
+
+        .home .home-content .text-1 {
+            font-size: 27px;
+        }
+
+        .home .home-content .text-2 {
+            font-size: 75px;
+            font-weight: 600;
+            margin-left: -3px;
+        }
+
+        .home .home-content .text-3 {
+            font-size: 40px;
+            margin: 5px 0;
+        }
+
+        .home .home-content .text-3 span {
+            color: crimson;
+            font-weight: 500;
+        }
+
+        .home .home-content a {
+            display: inline-block;
+            background: crimson;
+            color: #fff;
+            font-size: 25px;
+            padding: 12px 36px;
+            margin-top: 20px;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 2px solid crimson;
+            transition: all 0.3s ease;
+        }
+
+        .home .home-content a:hover {
+            color: crimson;
+            background: none;
+        }
+        .btn1{
+            padding: 8px;
+            border-radius: 8px;
+            background-color: orangered;
+            color:white;
+            font-size: larger;
+            border:2px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+
+<body>
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello,</div>
+                <div class="text-2">Detective</div>
+                <div class="text-3">And I'm your <span class="typing"></span></div>
+                <form action="/video_feed" method="post">
+                    <button class="btn1" type="submit">Try it out</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            var typed = new Typed(".typing", {
+                strings: ["Security Analyst", "Crime Fighter"],
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+        });
+    </script>
+</body>
+
+</html>
